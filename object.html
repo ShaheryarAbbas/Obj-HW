@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Data type</title>
+    <!-- Object is a non primitive data type used in javascript to show candidates data/ for other puposes.
+    First we mention the property(like the name of object or color) and then it's value(age,salary etc).
+    We use curly braces for object. we can use array in object and object in array.
+     in this project I will use some object's(women) properties and values -->
+</head>
+<body>
+    <script>
+        var obj = {
+        name: "Sania",
+        age: 20,
+        email: "saniamalik@gmail.com"
+    }
+    document.write(obj + "<br>");
+    // it wouldn't get print like array so we have to mention the properties we want to print
+        document.write(obj.name + " " + obj.age + " " + obj.email + " ");
+        document.write("<br>");
+        // we can also do it with for in loop(we use for in loop for object)
+    for(a in obj){
+        document.write(obj[a] + " ");
+    }
+        document.write("<br>");
+    // now let's use two variables to get the object's property and value with for loop
+    var Names = ["Mehwish","Umar", "Iqra"];
+    var Ages = [19,22,26];
+    for(b=0;b<Names.length;b++){
+        document.write("Age of" + " " + Names[b] + " " + "is" + " " + Ages[b] + "<br>")
+    }
+    </script>
+</body>
+</html>
